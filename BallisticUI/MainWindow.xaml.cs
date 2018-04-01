@@ -25,4 +25,22 @@ namespace BallisticUI
             InitializeComponent();
         }
     }
+
+    class MainModel : ViewModelBase
+    {
+        private double _velocity;
+        private double _gravity;
+
+        public double Velocity
+        {
+            get => _velocity;
+            set => Set(ref _velocity, value);
+        }
+
+        public double Gravity
+        {
+            get => _gravity;
+            set => Set(ref _gravity, value);
+        }
+    }
 }
