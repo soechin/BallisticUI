@@ -7,29 +7,12 @@
         Title="BallisticUI"
         Width="640"
         Height="400"
+        Closed="Window_Closed"
+        Loaded="Window_Loaded"
         WindowStartupLocation="CenterScreen"
         mc:Ignorable="d">
     <Window.DataContext>
-        <local:MainModel Gravity="7.5" Velocity="500" />
+        <local:MainModel />
     </Window.DataContext>
-    <Grid>
-        <TextBlock Margin="10,10,0,0"
-                   HorizontalAlignment="Left"
-                   VerticalAlignment="Top"
-                   Text="初速" />
-        <TextBox Width="120"
-                 Margin="47,8,0,0"
-                 HorizontalAlignment="Left"
-                 VerticalAlignment="Top"
-                 Text="{Binding Velocity}" />
-        <TextBlock Margin="10,35,0,0"
-                   HorizontalAlignment="Left"
-                   VerticalAlignment="Top"
-                   Text="重力" />
-        <TextBox Width="120"
-                 Margin="47,35,0,0"
-                 HorizontalAlignment="Left"
-                 VerticalAlignment="Top"
-                 Text="{Binding Gravity}" />
-    </Grid>
+    <Grid />
 </Window>

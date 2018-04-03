@@ -29,7 +29,7 @@ namespace BallisticUI
             _execute();
         }
 
-        protected void Notify()
+        protected void OnCanExecuteChanged()
         {
             CanExecuteChanged?.Invoke(this, EventArgs.Empty);
         }
